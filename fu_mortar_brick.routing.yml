@@ -1,0 +1,7 @@
+fu_mortar_brick.lead_form:
+  path: '/fu_mortar_brick/form/lead'
+  defaults:
+    _form: '\Drupal\fu_mortar_brick\Form\LeadForm'
+    _title: 'LeadForm'
+  requirements:
+    _access: 'TRUE'

@@ -1,0 +1,5 @@
+name: 'Funami mortar and brick'
+type: module
+description: 'Blocks and Breackpoints'
+core: 8.x
+package: 'Funami'

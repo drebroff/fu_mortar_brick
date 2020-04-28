@@ -1,0 +1,6 @@
+services:
+  authentication.fu_mortar_brick:
+    class: Drupal\fu_mortar_brick\Authentication\Provider\FuAuthenticationProvider
+    arguments: ['@config.factory', '@entity_type.manager']
+    tags:
+      - { name: authentication_provider, provider_id: fu_authentication_provider, priority: 100 }

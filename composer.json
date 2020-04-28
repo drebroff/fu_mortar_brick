@@ -1,0 +1,13 @@
+{
+    "name": "fu_mortar_brick",
+    "type": "drupal-module",
+    "description": "Blocks and Breackpoints",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/fu_mortar_brick",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/fu_mortar_brick",
+        "source": "http://cgit.drupalcode.org/fu_mortar_brick",
+    },
+}

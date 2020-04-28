@@ -1,0 +1,43 @@
+<?php
+
+/**
+ * @file
+ * Contains fu_mortar_brick.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function fu_mortar_brick_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the fu_mortar_brick module.
+    case 'help.page.fu_mortar_brick':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Blocks and Breackpoints') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_alter().
+ */
+function fu_mortar_brick_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Change form id here.
+  if ($form_id == 'form_test_alter_form') {
+    \Drupal::messenger()->addMessage('form_test_form_alter() executed.');
+
+    $form['your_day'] = [
+      '#type' => 'color',
+      '#title' => t('Your Day'),
+      '#weight' => '0',
+    ];
+
+  }
+}
